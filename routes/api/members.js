@@ -20,7 +20,6 @@ router.get('/:id', (req, res) => {
 })
 
 // Create member
-
 router.post('/', (req, res) => {
     const newMember = {
         id: uuid.v4(),
@@ -34,6 +33,7 @@ router.post('/', (req, res) => {
     }
     members.push(newMember);
     res.json(members)
+    //res.redirect('/');
 })
 
 // Upate member
